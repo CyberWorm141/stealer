@@ -161,21 +161,21 @@
                     <div class="inp">
                         <div>
                             <label>Port:<span style="color: #222;">..............</span></label>
-                            <input type="text" value="0" class="num-1">
+                            <input type="text" value="0" class="num_inp1">
                         </div>
                         <div style="display: flex;">
-                            <div class="btn-o" style="border-right: 5px solid #444;">+</div>
-                            <div class="btn-o">-</div>
+                            <div class="btn-o inc1"">+</div>
+                            <div class="btn-o dec1">-</div>
                         </div>
                     </div>
                     <div class="inp">
                         <div>
                             <label>Time Interval: </label>
-                            <input type="text" value="0">
+                            <input type="text" value="0" class="num_inp2">
                         </div>
                         <div style="display: flex;">
-                            <div class="btn-o">+</div>
-                            <div class="btn-o">-</div>
+                            <div class="btn-o inc2">+</div>
+                            <div class="btn-o dec2">-</div>
                         </div>
                     </div>
                     <div class="inp" style="display: flex; justify-content: center; align-items: center;">
@@ -204,7 +204,7 @@
             </div>
         </div>
     </div>
-
+    
     <script>
         const us = document.querySelector(".us");
         const so = document.querySelector(".so");
@@ -216,10 +216,34 @@
         const s3 = document.querySelector(".section-3");
         const s4 = document.querySelector(".section-4");
 
+        const inc1 = document.querySelector(".inc1");
+        const inc2 = document.querySelector(".inc2");
+        const dec1 = document.querySelector(".inc1");
+        const dec2 = document.querySelector(".inc2");
+
+        const num_inp1 = document.querySelector(".num_inp1");
+        const num_inp2 = document.querySelector(".num_inp2");
+
         window.onload = () => {
             s2.style.display = "none";
             s3.style.display = "none";
             s4.style.display = "none";
+        }
+
+        inc1.onclick = () => {
+            num_inp1.innerText++;
+        }
+
+        dec1.onclick = () => {
+            num_inp1.innerText--;
+        }
+
+        inc2.onclick = () => {
+            num_inp2.innerText++;
+        }
+
+        dec.onclick = () => {
+            num_inp2.innerText--;
         }
 
         us.onclick = () => {
