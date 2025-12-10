@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(171, 171, 179);
+        }
+
+        .wrapper {
+            height: 500px;
+            width: 900px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #222;
+        }
+
+        .header {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(50, 105, 153);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem 0 1rem;
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .header div {
+            height: 100%;
+        }
+
+        .selection {
+            height: 60px;
+            width: 890px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);            
+        }
+
+        .btn {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444444;
+            transition: 0.3s;
+            user-select: none;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background-color: #a2b2bd;
+        }
+
+        .section {
+            height: calc(500px - 80px - 65px);
+            width: 890px;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #eaeaea;
+        }
+
+        .left, .right {
+            height: 100%;
+        }
+
+        .inp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        .btn-o {
+            height: 45px;
+            width: 45px;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 800;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .btn-o:hover {
+            background-color: #a2b2bd;
+        }
+
+        input {
+            height: 45px;
+            width: 220px;
+            background-color: #444;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 22px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+        }
+
+        .right input {
+            width: 90px;
+        }
+
+        label {
+            font-size: 25px;
+            margin-right: 10px;
+            user-select: none;
+        }
+
+        a {
+            color: rgb(140, 183, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>#*# Death Stealer #*#</p>
+            <div>
+                <img src="image.png">
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="selection">
+                <div class="btn us">User Settings</div>
+                <div class="btn so">Stealer Options</div>
+                <div class="btn tb">Tools & Builder</div>
+                <div class="btn ab">About !</div>
+            </div>
+            <div class="section section-1">
+                <div class="left">
+                    <div class="inp">
+                        <label>E-Mail: </label>
+                        <input type="text">
+                    </div>
+                    <div class="inp">
+                        <label>Passwrod: </label>
+                        <input type="password">
+                    </div>
+                    <div class="inp">
+                        <label>Msil SMTP: </label>
+                        <input type="url">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inp">
+                        <div>
+                            <label>Port:<span style="color: #222;">..............</span></label>
+                            <input type="text" value="0" class="num-1">
+                        </div>
+                        <div style="display: flex;">
+                            <div class="btn-o" style="border-right: 5px solid #444;">+</div>
+                            <div class="btn-o">-</div>
+                        </div>
+                    </div>
+                    <div class="inp">
+                        <div>
+                            <label>Time Interval: </label>
+                            <input type="text" value="0">
+                        </div>
+                        <div style="display: flex;">
+                            <div class="btn-o">+</div>
+                            <div class="btn-o">-</div>
+                        </div>
+                    </div>
+                    <div class="inp" style="display: flex; justify-content: center; align-items: center;">
+                        <input type="checkbox">
+                        <label>Use SSL</label>
+                    </div>
+                    <div class="btn-o" style="width: 175px; height: 70px; font-size: 20px; transform: translate(50%, 50%);">
+                        ! Mail Reciver !
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-2">
+                <p style="font-size: 25px; display: flex; justify-content: center; align-items: center; flex-direction: column;">Actual link: <a href="https://www.mediafire.com/file/xpzzgn6jgnkny16/Launcher_WegaByte.rar/file">https://www.mediafire.com/file/xpzzgn6jgnkny16/Launcher_WegaByte.rar/file</a></p>
+                <p style="margin-top: 1rem; font-size: 30px; font-weight: 700;">THE FILE IS UPDATE ONCE A WEEK</p>
+            </div>
+
+            <div class="section section-3">
+                <p style="font-size: 30px; font-weight: 700;">The function is temporarily unavailable</p>
+            </div>
+
+            <div class="section section-4">
+                <p style="font-size: 20px; width: 90%; line-height: 35px;">
+                    Steam Stealer Extreme is the new Steam Stealer completely custom coded (you can PM us and get some proof if you want!) and functions well. Steam Stealer Extreme is not like other steam stealers which is based off the same code as found on the Russian forum where it was leaked. It has extra features like filters (which are properly coded) and spreading your file via commenting on the client's friends' profiles * NEW * Spreads Via Chat! We're a no bullshit product with little disadvantages. Our stealer does work and will work until Steam decide to patch the methodsused. Steam Stealer Extreme is about getting the items you want and when you want.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const us = document.querySelector(".us");
+        const so = document.querySelector(".so");
+        const tb = document.querySelector(".tb");
+        const ab = document.querySelector(".ab");
+
+        const s1 = document.querySelector(".section-1");
+        const s2 = document.querySelector(".section-2");
+        const s3 = document.querySelector(".section-3");
+        const s4 = document.querySelector(".section-4");
+
+        window.onload = () => {
+            s2.style.display = "none";
+            s3.style.display = "none";
+            s4.style.display = "none";
+        }
+
+        us.onclick = () => {
+            s1.style.display = "flex";
+            s2.style.display = "none";
+            s3.style.display = "none";
+            s4.style.display = "none";
+        }
+
+        so.onclick = () => {
+            s1.style.display = "none";
+            s2.style.display = "flex";
+            s2.style.flexDirection = "column";
+            s3.style.display = "none";
+            s4.style.display = "none";
+        }
+
+        tb.onclick = () => {
+            s1.style.display = "none";
+            s2.style.display = "none";
+            s3.style.display = "flex";
+            s4.style.display = "none";
+        }
+
+        ab.onclick = () => {
+            s1.style.display = "none";
+            s2.style.display = "none";
+            s3.style.display = "none";
+            s4.style.display = "flex";
+        }
+    </script>
+</body>
+</html>
