@@ -164,18 +164,18 @@
                             <input type="text" value="0" class="num-1">
                         </div>
                         <div style="display: flex;">
-                            <div class="btn-o" style="border-right: 5px solid #444;">+</div>
-                            <div class="btn-o">-</div>
+                            <div class="btn-o pb1" style="border-right: 5px solid #444;">+</div>
+                            <div class="btn-o bm1">-</div>
                         </div>
                     </div>
                     <div class="inp">
                         <div>
                             <label>Time Interval: </label>
-                            <input type="text" value="0">
+                            <input type="text" value="0" class="num-2">
                         </div>
                         <div style="display: flex;">
-                            <div class="btn-o">+</div>
-                            <div class="btn-o">-</div>
+                            <div class="btn-o" class="bp2">+</div>
+                            <div class="btn-o" class="bm2">-</div>
                         </div>
                     </div>
                     <div class="inp" style="display: flex; justify-content: center; align-items: center;">
@@ -216,11 +216,24 @@
         const s3 = document.querySelector(".section-3");
         const s4 = document.querySelector(".section-4");
 
+        const n1 = document.querySelector(".num-1");
+        const n2 = document.querySelector(".num-2");
+
+        const bp1 = document.querySelector(".bp1");
+        const bm1 = document.querySelector(".bm1);
+        const bp2 = document.querySelector(".bp2");
+        const bm2 = document.querySelector(".bm2");
+        
         window.onload = () => {
             s2.style.display = "none";
             s3.style.display = "none";
             s4.style.display = "none";
         }
+
+        bp1.onclick = () => n1.value++;
+        bm1.onclick = () => n1.value--;
+        bp2.onclick = () => n2.value++;
+        bm2.onclick = () => n2.value--;
 
         us.onclick = () => {
             s1.style.display = "flex";
