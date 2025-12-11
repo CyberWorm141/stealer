@@ -233,8 +233,8 @@
 
         bp1.onclick = () => n1.value++;
         bp2.onclick = () => n2.value++;
-        bm1.onclick = () => if (n1.value > 0) n1.value--;
-        bm2.onclick = () => if (n2.value > 0) n2.value--;
+        bm1.onclick = () => if (n1.value != "0") n1.value--;
+        bm2.onclick = () => if (n2.value != "0") n2.value--;
 
         us.onclick = () => {
             s1.style.display = "flex";
