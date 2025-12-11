@@ -96,7 +96,6 @@
             font-weight: 800;
             transition: 0.3s;
             user-select: none;
-            border: none;
         }
 
         .btn-o:hover {
@@ -165,18 +164,18 @@
                             <input type="text" value="0" class="num-1">
                         </div>
                         <div style="display: flex;">
-                            <button class="btn-o bp1" style="border-right: 5px solid #444;">+</button>
-                            <button class="btn-o bm1">-</button>
+                            <div class="btn-o" style="border-right: 5px solid #444;">+</div>
+                            <div class="btn-o">-</div>
                         </div>
                     </div>
                     <div class="inp">
                         <div>
                             <label>Time Interval: </label>
-                            <input type="text" value="0" class="num-2">
+                            <input type="text" value="0">
                         </div>
                         <div style="display: flex;">
-                            <button class="btn-o bp2">+</button>
-                            <button class="btn-o bm2">-</button>
+                            <div class="btn-o">+</div>
+                            <div class="btn-o">-</div>
                         </div>
                     </div>
                     <div class="inp" style="display: flex; justify-content: center; align-items: center;">
@@ -216,7 +215,7 @@
         const s2 = document.querySelector(".section-2");
         const s3 = document.querySelector(".section-3");
         const s4 = document.querySelector(".section-4");
-        
+
         window.onload = () => {
             s2.style.display = "none";
             s3.style.display = "none";
